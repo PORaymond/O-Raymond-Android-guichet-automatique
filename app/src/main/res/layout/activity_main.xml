@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClickEtatComptes"
+    tools:context=".ATM">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="403dp"
+        android:layout_height="57dp"
+        android:layout_row="0"
+        android:layout_column="2"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707">
+
+        <TextView
+            android:id="@+id/txtGreeting"
+            android:layout_width="128dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/bonjour_client_atm"
+            app:layout_constraintBottom_toBottomOf="@+id/btnLogout"
+            app:layout_constraintEnd_toStartOf="@+id/btnLogout"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnLogout"
+            app:layout_constraintVertical_bias="0.344" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="139dp"
+            android:layout_height="60dp"
+            android:onClick="onClickLogout"
+            android:text="@string/logout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtGreeting"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout3"
+        android:layout_width="377dp"
+        android:layout_height="195dp"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:layout_marginTop="108dp"
+        android:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
+            android:onClick="onClick1"
+            android:text="@string/_1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="14dp"
+            android:onClick="onClick2"
+            android:text="@string/_2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="14dp"
+            android:onClick="onClick3"
+            android:text="@string/_3" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="14dp"
+            android:onClick="onClick4"
+            android:text="@string/_4" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
+            android:onClick="onClick5"
+            android:text="@string/_5" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="14dp"
+            android:onClick="onClick6"
+            android:text="@string/_6" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="14dp"
+            android:onClick="onClick7"
+            android:text="@string/_7" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="14dp"
+            android:onClick="onClick8"
+            android:text="@string/_8" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
+            android:onClick="onClick9"
+            android:text="@string/_9" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="14dp"
+            android:onClick="onClick0"
+            android:text="@string/_0" />
+
+        <Button
+            android:id="@+id/btnVirgule"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="14dp"
+            android:onClick="onClick_"
+            android:text="@string/__" />
+
+        <Button
+            android:id="@+id/bntC"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="14dp"
+            android:onClick="onClickC"
+            android:text="@string/c" />
+
+
+    </GridLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="409dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout3">
+
+        <EditText
+            android:id="@+id/editTextMontant"
+            android:layout_width="377dp"
+            android:layout_height="48dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/montant"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="407dp"
+        android:layout_height="144dp"
+        android:layout_row="0"
+        android:layout_column="2"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <RadioGroup
+            android:id="@+id/radioGroupAction"
+            android:layout_width="233dp"
+            android:layout_height="146dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/radioGroupCompte"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RadioButton
+                android:id="@+id/depot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/d_p_t"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/retrait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/retrait" />
+
+            <RadioButton
+                android:id="@+id/virement"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/virement"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="582dp" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupCompte"
+            android:layout_width="145dp"
+            android:layout_height="146dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/radioGroupAction"
+            app:layout_constraintTop_toTopOf="@+id/radioGroupAction">
+
+            <RadioButton
+                android:id="@+id/cheque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ch_que"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/epargne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pargne" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="376dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <Button
+            android:id="@+id/etat_des_comptes"
+            android:layout_width="220dp"
+            android:layout_height="55dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="11dp"
+            android:onClick="onClickEtatComptes"
+            android:text="@string/tat_des_comptes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/soumettre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/soumettre"
+            android:layout_width="129dp"
+            android:layout_height="55dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="11dp"
+            android:onClick="onClickSoumettre"
+            android:text="@string/soumettre"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/etat_des_comptes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="300dp"
+        android:layout_height="139dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+        <TextView
+            android:id="@+id/txtEtatChequeID"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/txtEtatEpargneID"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
